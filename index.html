@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My Family Book</title>
+    </head>
+    <body>
+        <p><h1>My Family Book </h1></p>
+        <img id="img" src="dad.jpg" height="270" width="230">
+        <p><h2 id="na">Gajendran.K</h2></p>
+        <button type="button" onclick="update()">Next</button>
+    </body>
+<script>
+    var updateName=[na];
+    var updateImage=[img];
+    var images=["dad.jpg","amma.jpg","bh.jpg","pathy.jpg","atha.jpg","budu.jpg","archu.jpg"];
+    var names=["Gajendran.K","Umameshwari.G","Bhavana.G","Lakshmi Pathy.G","Priyanka.L","Grahitha.L","Archana.G","Karthikeyan.G"];
+    var i=0; 
+    function update() {
+        if(i == 8) {
+    i=0
+  }
+        document.getElementById("na").innerHTML=names[i];
+        document.getElementById("img").innerHTML=images[i];
+        i++;
+    }
+
+</script>
+</html>
